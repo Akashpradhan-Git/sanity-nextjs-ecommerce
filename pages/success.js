@@ -4,8 +4,10 @@ import { BsBagCheckFill } from 'react-icons/bs'
 import { emptyCart } from "../app/slices/cartSlice";
 import { useDispatch } from "react-redux";
 import { runFireworks } from '../lib/util';
-const success = () => {
+const Success = () => {
+
     const dispatch = useDispatch();
+
     useEffect(() => {
         dispatch(emptyCart());
         runFireworks();
@@ -36,4 +38,4 @@ const success = () => {
     )
 }
 
-export default success
+export default Success
