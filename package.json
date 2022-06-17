@@ -9,9 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
+    "@sanity/client": "^3.3.2",
+    "@sanity/image-url": "^1.0.1",
+    "canvas-confetti": "^1.5.1",
     "next": "12.1.6",
+    "next-auth": "^4.5.0",
+    "razorpay": "^2.8.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-redux": "^8.0.2",
+    "react-toastify": "^9.0.4",
+    "rsuite": "^5.15.0"
   },
   "devDependencies": {
     "eslint": "8.17.0",
