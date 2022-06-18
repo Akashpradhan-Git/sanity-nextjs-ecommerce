@@ -1,3 +1,4 @@
+
 import { Product, FooterBanner, HeroBanner } from '../components/index'
 import { client } from '../lib/client'
 const index = ({ products, bannerData }) => {
@@ -10,7 +11,7 @@ const index = ({ products, bannerData }) => {
       </div>
       <div className="products-container">
         {
-          products?.map((product, index) => {
+          products?.map((product) => {
             return <Product key={product._id} product={product} />
           })
         }
