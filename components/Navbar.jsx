@@ -4,7 +4,6 @@ import { AiOutlineShopping } from "react-icons/ai";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleCart } from "../app/slices/cartSlice";
 import Cart from "./Cart";
-import { isAuthenticated } from "../app/slices/auth";
 
 import { useSession, signIn, signOut } from "next-auth/react";
 
