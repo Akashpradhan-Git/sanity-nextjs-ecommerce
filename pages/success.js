@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { BsBagCheckFill } from 'react-icons/bs'
 import { emptyCart } from "../app/slices/cartSlice";
 import { useDispatch } from "react-redux";
