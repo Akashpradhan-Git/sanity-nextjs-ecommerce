@@ -11,6 +11,7 @@ import {
 } from "../app/slices/cartSlice";
 import { urlFor } from "../lib/client";
 import { initializeRazorpay } from "../lib/rozorpay";
+import { config } from "../lib/urlConfig";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -28,7 +29,7 @@ const Cart = () => {
       return;
     }
     // creating a new order
-    const result = await fetch("http://localhost:3000/api/payment", {
+    const result = await fetch(`${config.url.API_URL}/api/payment`, {
       method: "POST",
       body: JSON.stringify({
         amount: products.total,
