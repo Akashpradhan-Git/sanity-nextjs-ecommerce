@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { urlFor } from "../lib/client";
-
+import PropTypes from "prop-types";
 const FooterBanner = ({
   footerBanner: {
     discount,
@@ -42,5 +42,18 @@ const FooterBanner = ({
     </div>
   );
 };
-
+FooterBanner.prototype = {
+  footerBanner: PropTypes.shape({
+    discount: PropTypes.string,
+    largeText1: PropTypes.string,
+    largeText2: PropTypes.string,
+    saleTime: PropTypes.string,
+    smallText: PropTypes.string,
+    midText: PropTypes.string,
+    desc: PropTypes.string,
+    product: PropTypes.string,
+    buttonText: PropTypes.string,
+    image: PropTypes.string,
+  }),
+};
 export default FooterBanner;

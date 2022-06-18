@@ -1,3 +1,5 @@
+
+import React from 'react';
 import Link from 'next/link'
 import { useEffect } from 'react'
 import { BsBagCheckFill } from 'react-icons/bs'
@@ -8,8 +10,11 @@ const Success = () => {
 
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(emptyCart());
-        runFireworks();
+        const successInit = () => {
+            dispatch(emptyCart());
+            runFireworks();
+        }
+        successInit();
     }, [])
 
 

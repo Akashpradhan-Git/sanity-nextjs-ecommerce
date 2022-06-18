@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { Product, FooterBanner, HeroBanner } from '../components/index'
 import { client } from '../lib/client'
 const index = ({ products, bannerData }) => {

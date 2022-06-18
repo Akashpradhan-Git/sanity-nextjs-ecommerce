@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { client, urlFor } from '../../lib/client'
-import { AiFillStar, AiOutlineStar, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+import { AiFillStar, AiOutlineStar } from 'react-icons/ai'
 import { Product } from '../../components/index'
 import { addToCart } from '../../app/slices/cartSlice'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { useSession } from "next-auth/react";
 import { toast } from 'react-toastify'
-
+import PropTypes from "prop-types";
 const ProductSingle = ({ product, products }) => {
     const [index, setIndex] = useState(0);
     const dispatch = useDispatch()
@@ -79,6 +79,11 @@ const ProductSingle = ({ product, products }) => {
 
         </div>
     )
+}
+
+ProductSingle.prototype = {
+    product: PropTypes.object.isRequired,
+    products: PropTypes.array.isRequired
 }
 
 export default ProductSingle
