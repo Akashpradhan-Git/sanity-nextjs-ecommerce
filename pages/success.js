@@ -7,7 +7,6 @@ import { runFireworks } from '../lib/util';
 const Success = () => {
 
     const dispatch = useDispatch();
-
     useEffect(() => {
         dispatch(emptyCart());
         runFireworks();
