@@ -793,11 +793,15 @@ color: #fff;
 }
 
 .nav-item.logout {
-  border-radius: 10px;
-  color: #fff;
-  padding: 7px;
-  background: #fe5631;
-  transition: all .5s ease;
+    border-radius: 10px;
+      color: #fff;
+      padding: 7px;
+      background: #fe5631;
+      transition: all .5s ease;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      
 }
 
 
