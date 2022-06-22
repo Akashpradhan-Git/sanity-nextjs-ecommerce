@@ -1,7 +1,6 @@
 import React from 'react'
 import { getProviders, signIn, getSession, csrfToken } from "next-auth/react";
 const signin = ({ providers }) => {
-    console.log(providers);
     return (
         <div class="wrap_login">
 

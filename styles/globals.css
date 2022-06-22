@@ -791,34 +791,19 @@ color: #fff;
 .nav-item:hover{
   color: #f02d34;
 }
-.nav-item.login{
-  color: #324d67;
-  padding:5px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  outline: none;
-  border: 1px solid #324d67;
-}
+
 .nav-item.logout {
-  color: #324d67;
-  padding:5px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  outline: none;
-  border: 1px solid #324d67;
+  border-radius: 10px;
+  color: #fff;
+  padding: 7px;
+  background: #fe5631;
+  transition: all .5s ease;
 }
 
-.nav-item.login:hover {
-  background-color: #324d67;
-  color: white;
-}
+
 .nav-item.logout:hover {
-  background-color: #f02d34;
-  color: white;
+  color: #fff;
+    transform: translate(-2px, -2px);
 }
 
 .avatar{
