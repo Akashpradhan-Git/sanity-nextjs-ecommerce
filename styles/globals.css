@@ -776,6 +776,17 @@ margin-top: 160px;
   font-size: 16px;
   font-weight: 600;
 }
+.nav-item.sign_in{
+border-radius: 10px;
+  color: #fff;
+  padding: 7px;
+  background: #FE5631;
+  transition:all 0.5s ease ;
+}
+.nav-item.sign_in:hover{
+color: #fff;
+  transform: translate(-2px, -2px);
+}
 
 .nav-item:hover{
   color: #f02d34;
@@ -819,4 +830,146 @@ margin-top: 160px;
 .logo{
   width: 100px;
   height: auto;
+}
+
+.wrap_login{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.login-container {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #00bcd4 !important;
+}
+
+.card-login {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.card-header {
+  background-color: #e91e63;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .wrap_login .card {
+  position: relative;
+  overflow: hidden;
+  width: 330px;
+  height: auto;
+  padding-bottom: 3rem;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  padding-top: 120px;
+  box-sizing: border-box;
+  transition: .3s;
+  cursor: pointer;
+}
+
+ .wrap_login .card:hover {
+  transform: translate(-3px, -3px)
+}
+
+ .wrap_login .top-block1 {
+  position: absolute;
+  background: rgba(255, 87, 50, 0.9);
+  width: 200%;
+  height: 300px;
+  left: -250px;
+  top: -190px;
+  transform: rotate(-18deg);
+}
+
+ .wrap_login .top-block2 {
+  position: absolute;
+  background: rgba(255, 87, 50, 0.4);
+  width: 200%;
+  height: 300px;
+  top: -80px;
+  transform: translate(-230px, -180px) rotate(18deg);
+}
+
+ .wrap_login .title {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  color: #FF6944;
+  font-size: 16px;
+}
+
+
+ .wrap_login .input-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+ .wrap_login .block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+  position: relative;
+  transition: .3s;
+}
+
+.block:hover {
+  transform: translate(-2px, -2px)
+}
+
+
+.wrap_login button {
+  outline: none;
+  cursor: pointer;
+  /*   font-family: 'Varela Round', sans-serif; */
+  /*   letter-spacing: 2px; */
+  border: none;
+  color: white;
+  background: #FE5631;
+  margin-top: 20px;
+  height: 45px;
+  width: 260px;
+  font-size: 18px;
+  border-radius: 15px;
+  transition: .3s;
+}
+
+.wrap_login button:hover {
+  transform: translate(-2px, -2px)
+}
+
+.link-block {
+  margin-top: -10px;
+  font-family: 'Varela Round', sans-serif;
+  color: #3f897e;
+  opacity: 0.8;
+}
+
+.forget {
+  margin-top: 0;
+}
+
+.create {
+  margin-top: 50px;
+  bottom: 0;
 }

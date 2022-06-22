@@ -29,10 +29,10 @@ const Navbar = () => {
         <Link href='/'>
           <a className='nav-item'>Home</a>
         </Link>
-        <Link href='/products'>
+        <Link href='/'>
           <a className='nav-item'>Products</a>
         </Link>
-        <Link href='/about'>
+        <Link href='/'>
           <a className='nav-item'>About</a>
         </Link>
         {session ? (
@@ -42,19 +42,15 @@ const Navbar = () => {
               className='nav-item logout'
               onClick={() => signOut()}
             >
-              Logout
+              signOut
             </button>
             <img className='avatar' src={session.user.image} alt='user-image' />
             <a className='nav-item'>{session.user.name}</a>
           </>
         ) : (
-          <button
-            type='button'
-            className='nav-item login'
-            onClick={() => signIn()}
-          >
-            Login
-          </button>
+          <Link href='/signin'>
+            <a className='nav-item sign_in'> SignIn</a>
+          </Link>
         )}
       </div>
       <button
